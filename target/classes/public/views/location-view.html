@@ -1,0 +1,35 @@
+<div class="container pad-top">
+  <table class="table locationtable">
+      <tr>
+          <td><h3>Details for {{location.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{location.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{location.description}}</td>
+      </tr>
+      <tr>
+          <td>Year</td>
+          <td>{{location.year}}</td>
+      </tr>
+      <tr>
+          <td>Country</td>
+          <td>{{location.country}}</td>
+      </tr>
+      <tr>
+          <td>City</td>
+          <td>{{location.city}}</td>
+      </tr>
+      <tr>
+          <td>Location</td>
+          <td>{{location.latitude}}, {{location.longitude}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editLocation({id:location.id})">Edit</a>
+  </div>
+</div>
