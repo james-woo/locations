@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by James Woo on 3/25/2016.
- */
 @RestController
 @RequestMapping("api/v1/")
 public class LocationController {

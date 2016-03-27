@@ -9,6 +9,7 @@
           <td>{{location.name}}</td>
           <td>{{location.description}}</td>
           <td>{{location.year}}</td>
+          <td><img ng-src="{{location.img_url}}" width="300px"></td>
           <td>
               <a class="btn btn-primary" ui-sref="viewLocation({id:location.id})">View</a>
               <a class="btn btn-danger"  ng-click="deleteLocation(location)">Delete</a>

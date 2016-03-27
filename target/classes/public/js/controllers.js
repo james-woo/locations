@@ -1,8 +1,17 @@
 angular.module('app.controllers', [])
-.controller('HomeController', function() {
+.controller('HomeController', function($scope, Location) {
     L.mapbox.accessToken = 'pk.eyJ1IjoiY3BkbGF0bSIsImEiOiJjaWxkZTR1bjgwZWMzdmFtYzd4ajhjcjRnIn0.-y57DqhBHm0jg2-v1JI-UQ';
     var map = L.mapbox.map('map', 'mapbox.streets')
-        .setView([40, -74.50], 9);
+        .setView([0, 0], 1);
+    Location.query().$promise.then(
+        function(locations) {
+            for(var i = 0; i < locations.length; i++) {
+                L.marker([locations[i].latitude,locations[i].longitude]).addTo(map);
+            }
+        }
+    );
+
+
 })
 
 .controller('LocationListController', function($scope, $state, popupService, $window, Location) {

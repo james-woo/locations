@@ -14,18 +14,20 @@ public class Location {
 	String description;
 	String country;
 	String city;
+	String img_url;
 	Double latitude;
 	Double longitude;
 	Integer year;
 
 	public Location() { }
 
-	public Location(Long id, String name, String description, String country, String city, Double latitude, Double longitude, Integer year) {
+	public Location(Long id, String name, String description, String country, String city, String img_url, Double latitude, Double longitude, Integer year) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.country = country;
 		this.city = city;
+		this.img_url = img_url;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.year = year;
@@ -69,6 +71,14 @@ public class Location {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getImg_url() {
+		return img_url;
+	}
+
+	public void setImg_url(String img_url) {
+		this.img_url = img_url;
 	}
 
 	public Double getLatitude() {

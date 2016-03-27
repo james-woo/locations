@@ -1,5 +1,4 @@
 body {
-  padding-top: 20px;
 }
 .starter-template {
   padding: 40px 15px;
@@ -58,6 +57,64 @@ to prevent collapsing during animation*/
   -webkit-transform: translate3d(100px, 0, 0);
   -moz-transform: translate3d(100px, 0, 0);
   transform: translate3d(100px, 0, 0);
+}
+
+a {
+  color: #00b7ff;
+}
+
+.navbar-default {
+  background: #1E88E5;
+  border-color: #1565c0;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background: #1565c0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background: #1565c0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1565c0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: #1565c0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
 }
 
 #map {

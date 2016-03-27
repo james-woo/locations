@@ -13,12 +13,11 @@ public class LocationStub {
 
 	//populate initial locations
 	static {
-		//Long id, String name, String description, String country, String city, Double latitude, Double longitude, Integer year
-		Location a = new Location(1L, "Germany", "Germany trip", "Germany", "Berlin", 44.12, 138.44, 2015);
+		Location a = new Location(1L, "Germany", "Germany trip", "Germany", "Berlin", "https://upload.wikimedia.org/wikipedia/commons/1/17/High_income_country_economies_by_world_bank_2015.png", 44.12, 138.44, 2015);
 		locations.put(1L, a);
-		Location b = new Location(1L, "Korea", "Korea trip", "Korea", "Seoul", 44.12, 138.44, 2015);
+		Location b = new Location(1L, "Korea", "Korea trip", "Korea", "Seoul", "https://upload.wikimedia.org/wikipedia/commons/1/17/High_income_country_economies_by_world_bank_2015.png", 44.12, 138.44, 2015);
 		locations.put(2L, b);
-		Location c = new Location(1L, "Mexico", "Mexico trip", "Mexico", "Cancun", 44.12, 138.44, 2015);
+		Location c = new Location(1L, "Mexico", "Mexico trip", "Mexico", "Cancun", "https://upload.wikimedia.org/wikipedia/commons/1/17/High_income_country_economies_by_world_bank_2015.png", 44.12, 138.44, 2015);
 		locations.put(3L, c);
 	}
 

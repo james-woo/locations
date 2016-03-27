@@ -9,9 +9,6 @@ import org.springframework.context.annotation.Primary;
 
 import javax.sql.DataSource;
 
-/**
- * Created by James Woo on 3/25/2016.
- */
 @Configuration
 public class PersistenceConfiguration {
     @Bean
